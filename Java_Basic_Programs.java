@@ -202,38 +202,215 @@ double kilometers;
 //  Question 05
 System.out.println("\n\n==========================");
 System.out.println("Question 05:");
-System.out.println("Write a program that inputs the distance traveled and speed of vehicle. It calculates the time taken to reach its destination and print it\n");
+System.out.println("Write a program that inputs the distance traveled and speed of vehicle. It calculates the time taken to reach its destination and print it.\n");
 
-System.out.print("Question 05");
+int S=0;
+int v=0;
+int t=0;
+// S= v*t
+Scanner newS = new Scanner(System.in);
+S=newS.nextInt();
+v=newS.nextInt();
+
+t=S/v;
+
+System.out.println("Time taken to reach: "+t);
 
 
 //============================================//
 //  Question 06
 System.out.println("\n\n==========================");
 System.out.println("Question 06:\n");
-System.out.println("Write a program that inputs the distance traveled and speed of vehicle. It calculates the time taken to reach its destination and print it\n");
+System.out.println("Write a program that takes a 3-digit number from user and display the reverse of that number. For example if user enters 123, then the program should display 321.\n");
+
+int ThreeDigitNumber;
+
+Scanner S10 = new Scanner(System.in);
+ThreeDigitNumber=S10.nextInt();
+
+System.out.println(Integer.toString(ThreeDigitNumber).length());
+
+if(Integer.toString(ThreeDigitNumber).length()==3){
+char[] ca = { Integer.toString(ThreeDigitNumber).charAt(2)
+    , Integer.toString(ThreeDigitNumber).charAt(1)
+    , Integer.toString(ThreeDigitNumber).charAt(0) 
+};
+		// String newNumber = String.valueOf(ca);
+		// // recommended way
+		String newNumber = new String(ca);
+
+        System.out.println(newNumber);
+
+}
+
+else{
+    System.out.println("Entered Number is not a three Digit Number");
+}
 
 
-System.out.print("Question 06");
+
+
+
 
 
 //============================================//
 //  Question 07
 System.out.println("\n\n==========================");
 System.out.println("Question 07:\n");
-System.out.println("Write a program that inputs the distance traveled and speed of vehicle. It calculates the time taken to reach its destination and print it\n");
+System.out.println(". Write a program that will prompt the user to enter number of hours. Your program should display the number of weeks, days and hours within the input number of hours.\n");
 
+int hrs, W, d; 
 
-System.out.print("Question 07");
+System.out.println("Enter number of hours: ");
+Scanner S11 = new Scanner(System.in);
+hrs=S11.nextInt();
+
+W = hrs / 168;
+hrs = hrs - ( W * 168 );
+
+d = hrs / 24;
+hrs = hrs - ( d * 24 );
+
+System.out.println("Weeks: "+W+"\nDays: "+d+"\nHours: "+hrs);
 
 
 //============================================//
 //  Question 08
 System.out.println("\n\n==========================");
 System.out.println("Question 08:\n");
-System.out.println("Write a program that inputs the distance traveled and speed of vehicle. It calculates the time taken to reach its destination and print it\n");
+System.out.println("Write a program in Java to check whether a number is positive, negative or zero.\n");
 
-System.out.print("Question 08");
+int number;
+System.out.println("Enter number to check: ");
+Scanner scanner112 = new Scanner(System.in);
+number = scanner112.nextInt();
+
+if(number > 0)
+    {
+        System.out.println(number + "is a Positive Number");
+    }
+else if(number < 0)
+{
+    System.out.println(number + "is a Negative Number");
+}
+else
+{
+    System.out.println("Number is 0");
+}
+
+
+//============================================//
+//  Question 09
+System.out.println("\n\n==========================");
+System.out.println("Question 09:\n");
+System.out.println("Write a program that takes 3 numbers from user and find maximum from these numbers.");
+
+int a9=0,b9=0,c9=0;
+Scanner scanner9 = new Scanner(System.in);
+System.out.println("Enter First Number: ");
+a9 = scanner9.nextInt();
+System.out.println("Enter Second Number: ");
+b9 = scanner9.nextInt();
+System.out.println("Enter Third Number: ");
+c9 = scanner9.nextInt();
+
+int ArrayQuestion9[]={a9,b9,c9};
+int maximum9=0;
+
+for (int count6 = 0; count6 < ArrayQuestion9.length; count6++) {
+    maximum9 = ArrayQuestion9[count6];
+
+        for (int count4 = 1; count4 < ArrayQuestion9.length; count4++)
+            if (ArrayQuestion9[count4] > maximum9){
+                maximum9 = ArrayQuestion9[count4];
+            }
+    System.out.println("Maximum from all three is : "+maximum9);
+}
+
+
+//============================================//
+//  Question 10
+System.out.println("\n\n==========================");
+System.out.println("Question 10:\n");
+System.out.println("Write a program that takes a number from user and find whether it is even or odd.");
+
+
+
+
+//============================================//
+//  Question 11
+System.out.println("\n\n==========================");
+System.out.println("Question 11:\n");
+System.out.println("Write a program that inputs salary and grade. It adds 50% bonus if the grade is greater than 15. It adds 25% bonus if the grade is 15 or less and then display the total salary");
+
+
+
+
+//============================================//
+//  Question 12
+System.out.println("\n\n==========================");
+System.out.println("Question 12:\n");
+System.out.println("Write a program that displays the squares of the numbers from 0 to 14.\nHere’s the output:\n0 1 4 9 16 25 36 49 64 81 100 121 144 169 196");
+
+
+
+//============================================//
+//  Question 13
+System.out.println("\n\n==========================");
+System.out.println("Question 13:\n");
+System.out.println("Write a program in Java to display n terms of natural number and their sum.\n => Sample Output:\nInput a number of terms: 7\nThe natural numbers upto 7th terms are:\n1 2 3 4 5 6 7\nThe sum of the natural numbers is: 28");
+
+
+
+
+//============================================//
+//  Question 14
+System.out.println("\n\n==========================");
+System.out.println("Question 14:\n");
+System.out.println("Write a program in Java to check whether a number is prime or not.");
+
+
+
+
+
+
+//============================================//
+//  Question 15
+System.out.println("\n\n==========================");
+System.out.println("Question 15:\n");
+System.out.println("Write a program in Java to find prime number within a range.\nInput number for starting range: 1\nInput number for ending range: 100\nThe prime numbers between 1 and 100 are:\n2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97\nThe total number of prime numbers between 1 to 100 is: 25");
+
+
+
+
+
+
+
+//============================================//
+//  Question 16
+System.out.println("\n\n==========================");
+System.out.println("Question 16:\n");
+System.out.println("Write a program in Java to find the factorial of a number.\n => Sample output:\n\tInput a number to find the factorial: 5\n\tThe factorial of the given number is: 120");
+
+
+
+
+//============================================//
+//  Question 17
+System.out.println("\n\n==========================");
+System.out.println("Question 17:\n");
+System.out.println("Write a program in Java to find the sum of digits of a given number.\n => Sample Output:\n\tInput a number: 1234\n\tThe sum of digits of 1234 is: 10");
+
+
+
+
+
+//============================================//
+//  Question 18
+System.out.println("\n\n==========================");
+System.out.println("Question 18:\n");
+System.out.println("Write a program in Java to find the number and sum of all integer between 100 and 200 which are divisible by 9.\n => Sample Output:\n\tNumbers between 100 and 200, divisible by 9:\n\t108 117 126 135 144 153 162 171 180 189 198\n\tThe sum : 1683");
+
 
 
 //============================================//
@@ -242,6 +419,20 @@ System.out.println("\n\n==========================");
 System.out.println("Question 19:\n");
 System.out.println("Write a program in Java to display any number in reverse order.\n => Sample Output:\n\tInput a number: 12345\n\tThe number in reverse order is : 54321");
 
+Scanner sss = new Scanner(System.in);
+
+int number1 = 12345, reverse = 0;  
+
+number1= sss.nextInt();
+
+while(number1 != 0)   
+{  
+int remainder = number1 % 10;  
+reverse = reverse * 10 + remainder;  
+number1 = number1/10;  
+}  
+System.out.println("Input a number: " + number1);
+System.out.println("The number in reverse order is : " + reverse); 
 
 
 
