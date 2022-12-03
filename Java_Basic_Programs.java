@@ -130,7 +130,7 @@ class Array {
 
 
 // Question 28
-public class Assignment01 {
+public class Java_Basic_Programs {
 
    
 public static void main(String[] args) 
